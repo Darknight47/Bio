@@ -1,0 +1,627 @@
+
+header .imgIcon{
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ width: 40%;
+ 
+  
+}
+.HeadAnime{
+  width: 100%;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 8s;
+  margin-right: 0;
+  animation-iteration-count: 8;
+
+
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:0px; top:20px;}
+  50%  {background-color:blue; left:0px; top:0px;}
+  75%  {background-color:green; left:0px; top:20px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+.HeadAnime img{
+  width: 150px;
+  height: 150px;
+}
+
+body {
+  background-color: rgb( 11, 5, 16);
+  
+}
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+}
+
+.Hej{
+  text-align: center;
+}
+
+ul{
+background-color: black;
+ margin: 0;
+ padding: 0;
+ overflow: hidden;
+
+
+}
+li {
+display: inline-block;
+
+
+}
+
+li a{
+ display: inline-block;
+  text-align: center;
+  padding: 12px 12px;
+  text-decoration: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+color: white;
+
+}
+li a:hover{
+  background-color: darkgrey;
+}
+
+*{
+  box-sizing: border-box;
+}
+.column{
+  
+  width: 100%;
+  height: auto;
+  padding: 4px;
+  display: block;
+  position: relative;
+}
+
+.row {
+  display: flex;
+  align-items:flex-start;
+  position: relative;
+  width: 100%;
+  -webkit-animation-name: moving;
+  animation-duration: 6s;
+  animation-iteration-count: 8;
+  
+ 
+}
+@keyframes moving{
+  0%   { left:-80px; top:0px;}
+  
+  50%  { left:50px; top:0px;}
+
+  100% { left:-80px; top:0px;}
+}
+
+
+.overlay{
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: azure;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+}
+
+.text{
+  color:black;
+  font-size: 22px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.column:hover .overlay{
+  bottom: 0;
+  height: 100%;
+  box-shadow: 0 0 2px 2px black;
+  border-radius: 2px;
+  width: 100%;
+}
+
+.row img{
+  width: 160px;
+  height: 330px;
+  border-radius: 2px;
+  
+}
+
+.verticalM{
+  width: 200px;
+  height: 150px;
+  overflow-y: auto;
+  margin-bottom: 5px;
+}
+
+.verticalM a{
+  background-color: lightsteelblue;
+  color: black;
+  display: block; /* Make the links appear below each other */
+  padding: 12px;
+  text-decoration: none;
+}
+
+.verticalM a:hover{
+  background-color:white;
+}
+
+.verticalM a.active{
+  background-color:gray;
+  color: white;
+}
+
+.verticalMY{
+  width: 200px;
+  height: 150px;
+  overflow-y: auto;
+  top: 2px;
+}
+
+.verticalMY a{
+  background-color: lightsteelblue;
+  color: black;
+  display: block; /* Make the links appear below each other */
+  padding: 12px;
+  text-decoration: none;
+}
+
+.verticalMY a:hover{
+  background-color: white;
+}
+
+.verticalMY a.active{
+  background-color: gray;
+  color: white;
+}
+
+.BildL{
+  position: relative;
+  width: 200px;
+  height: 300px;
+  display: flex;
+  top: 70px;
+  max-width: 900px;
+  
+}
+
+.BildL img{
+  width: 100%;
+  height: auto;
+  width: 200px;
+  height: 300px;
+  border-radius: 10%;
+ 
+}
+
+.MovieInfo{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: thistle;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(0);
+  transition: 0.3s ease;
+}
+
+.bildList:hover .MovieInfo{
+  transform: scale(1);
+  border-radius: 10%;
+  box-shadow: 0 0 2px 2px  black;
+}
+
+.TexT {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.bildList{
+  width: 100%;
+  height: auto;
+  margin: 3px;
+  display: block;
+  position: relative;
+  height: 100%;
+  
+}
+
+.MovieInfo img{
+  width: 25px;
+  height: auto;
+ position: absolute;
+ 
+}
+
+
+
+.reklam{
+  position: absolute;
+  margin-left: 220px;
+  top: 650px;
+  margin-bottom: px;
+  
+}
+
+.reklam video{
+  width: 544px;
+  height: 306px;
+
+}
+
+.reklam img{
+  
+  width: 200px;
+  height: 306px;
+  margin-left: auto;
+
+}
+
+.reklamOverlay{
+  bottom: 0%;
+position: absolute;
+  left: 544px;
+  background-color: azure;
+  overflow: hidden;
+ 
+  height: 100%;
+  transition: 0.5s ease;
+  z-index: 1;
+}
+.reklam img:hover + .reklamOverlay {
+  width: 200px;
+}
+
+.reklamInfor p{
+  font-size: 17px;
+  color: black;
+  margin-left: 750px;
+  top: 0;
+  position: absolute;
+  border-left: 6px solid red;
+  background-color: white;
+  height: 305px;
+  width: 370px;
+  margin-top: 0;
+  padding: 2px;
+  font-family: fantasy;
+  
+}
+.reklamInfor img{
+  position: absolute;
+  float: right;
+  width: 25px;
+  height: auto;
+  margin-left: 1080px;
+  top: 270px;
+
+
+}
+
+.bildAnime{
+  
+  position: relative;
+    
+}
+.bildAnime img{
+  width: 300px;
+  height: 600px;
+
+}
+
+
+.AnimeList{
+ margin-left: 15px;
+ 
+}
+.gallery{
+  
+  margin: 5px;
+  border: 2px solid white;
+  float: left;
+  width: 260px;
+  height: 400px;
+  margin-top: 50px;
+}
+
+.gallery:hover .desc{
+  border: 1.4px solid white;
+  box-shadow: 0 0 2px 2px  mintcream;
+}
+
+.gallery img{
+  width: 100%;
+  height: 100%;
+  
+  
+}
+
+.desc{
+  padding: 15px;
+  text-align: center;
+  color: white;
+  width: 100%;
+  border: none;
+  background-color: black;
+}
+
+
+.verticalMa{
+  width: 220px;
+  height: 180px;
+  overflow-y: auto;
+  float: right;
+  margin-bottom: 5px;
+  margin-top: 50px;
+ 
+}
+
+.verticalMa a{
+  background-color: lightsteelblue;
+  color: black;
+  display: block; /* Make the links appear below each other */
+  padding: 12px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.verticalMa a:hover{
+  background-color:white;
+}
+
+.verticalMa a.active{
+  background-color:gray;
+  color: white;
+}
+
+.verticalMYa{
+  width: 220px;
+  height: 180px;
+  overflow-y: auto;
+  top: 2px;
+  float: right;
+ 
+}
+
+.verticalMYa a{
+  background-color: lightsteelblue;
+  color: black;
+  display: block; /* Make the links appear below each other */
+  padding: 12px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.verticalMYa a:hover{
+  background-color: white;
+}
+
+.verticalMYa a.active{
+  background-color: gray;
+  color: white;
+}
+
+.desc:hover{
+  background-color: dimgray;
+}
+
+.panel{
+  display: none;
+  overflow: hidden;
+  background-color: white;
+  padding: 0 18px;
+  position: relative;
+  width: 256px;
+  z-index: 1;
+  top: -120px;
+  
+  
+}
+
+.panel p{
+font-size: 18px;
+color: black;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+text-align: center;
+
+}
+.desc{
+  font-size: 15px;
+}
+
+.gallery1{
+  
+  margin: 5px;
+  border: 2px solid white;
+  float: left;
+  width: 260px;
+  height: 400px;
+  margin-top: 50px;
+}
+
+.gallery1:hover .desc{
+  border: 1.4px solid white;
+  box-shadow: 0 0 2px 2px  mintcream;
+}
+
+.gallery1 img{
+  width: 100%;
+  height: 100%;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  
+  
+}
+
+.NG{
+  
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  position: absolute;
+  display: flex;
+ 
+  margin-top: 500px;
+  padding: 20px;
+  overflow: hidden;
+  
+}
+
+.NG1 img{
+  vertical-align: middle;
+  width: 260px;
+  height: 400px;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  
+  margin-right: 11px;
+  
+ 
+}
+.NGcontent{
+  position: absolute;
+
+ 
+}
+.NG1:hover .NGcontent{
+  top: 0;
+  background: rgba(0,0,0,0.5);
+  color: coral;
+}
+
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  top: 350px;
+  border-radius: 10%;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+
+
+.AC{
+  margin-left: 15px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  position: absolute;
+  display: flex;
+  overflow: hidden;
+  
+}
+
+.AC1 img{
+  vertical-align: middle;
+  width: 260px;
+  height: 400px;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(1%);
+  border-radius: 10%;
+  margin-right: 11px;
+}
+
+.AC1:hover .NGcontent{
+  top: 0;
+  background: rgba(0,0,0,0.5);
+  color: coral;
+  border-radius: 10%;
+}
+.NGcontent:hover img{
+  width: 50px;
+  height: 50px;
+  float: right;
+
+}
+
+#search{
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  border-radius: 2px;
+}
+
+.pages{
+  position: relative;
+  top: 510px;
+  
+}
+.pages a{
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.pages a.pActive{
+  background-color: springgreen;
+  color: white;
+}
+
+.pages a:hover:not(.pActive){
+  background-color: silver;
+}
+.imgIcon img{
+  width: auto;
+ height: 250px;
+}
+@media (max-width:650px) and (max-width: 900px){
+  #pagecontent  {
+   font-size: 12px;
+  margin-left: 0;
+   
+  }
+  
+  .imgIcon img{
+    width: 20px;
+    height: auto;
+
+  }
+}
+
+@media (max-width:650px) and (max-width: 900px){
+  .AnimeList{
+    display: block;
+  }
+  .gallery{
+    margin-left: 43px;
+    height: 25rem;
+  }
+}
+  

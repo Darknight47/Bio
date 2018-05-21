@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="Css/styleSheet.css" rel="styleSheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DRAMA</title>
+</head>
+<body>
+
+        <header>
+
+                <ul>
+                        <li> <a href="animation.html" target="_blank">Animation</a></li>
+                        <li> <a href="drama.html" target="_blank">Drama</a></li>
+                        <li> <a href="action.html" target="_blank" >Action</a></li>
+                        <li> <a href="comedy.html" target="_blank"> Comedy </a></li>
+                        <li> <a href="fifth.html" target="_blank"> Adventure </a></li>
+                        <li style="float:right"> <a href="https://www.google.se/search?q=instagram&ie=utf-8&oe=utf-8&client=firefox-b&gfe_rd=cr&dcr=0&ei=tSq9WrKSEIKq8wf8j4xA"
+                        target="_blank"> <img src="Images/facebook.png" alt="facebook"> </a></li>
+                        <li style="float:right"> <a href="https://www.google.se" target="_blank"> <img src="Images/twitter.png" alt="twitter"></a></li>
+                        <li style="float:right"> <a href="https://www.google.se" target="_blank"> <img src="Images/youtube.png " alt="youtube.png"></a></li>
+                        <input id="search" type="text" placeholder="Söka Här....">
+
+               </ul>
+            
+            <div class="imgIcon">
+                   <a href="index.html"> <img src="Images/Icon.png" alt="this is Icon" style="width: auto; height: 250px;">
+                  </a>
+            </div>
+    
+        </header>
+
+        <div class="AnimeList">
+                    
+                 <div class="gallery1">
+                         <a target="_self" href="Images/denial.jpg">
+                             <img src="Images/denial.jpg" alt="Lion King r">
+                         </a>
+                         <button class="desc">Denial</button> 
+                         <div class="panel">
+                             <p>Denial(8,5 / 10)</p>
+                         </div>
+                     </div>
+     
+                     <div class="gallery1">
+                         <a target="_self" href="Images/land.jpg">
+                             <img src="Images/land.jpg" alt="land">
+                         </a>
+                         <button class="desc">Land of Mine</button>
+                         <div class="panel">
+                             <p>Land(7,5 / 10)</p>
+                         </div>
+                     </div>
+     
+                     <div class="gallery1">
+                         <a target="_self" href="Images/ithaca.jpg">
+                             <img src="Images/ithaca.jpg" alt="Ithaca">
+                         </a>
+                         <button class="desc">Ithaca</button>
+                         <div class="panel">
+                             <p>Ithaca (8,1 / 10)</p>
+                         </div>
+                     </div>
+
+                     <div class="gallery1">
+                        <a target="_self" href="Images/hanna.jpg">
+                            <img src="Images/hanna.jpg" alt="Hanna">
+                        </a>
+                        <button class="desc">Hanna</button>
+                        <div class="panel">
+                            <p>Hanna (8,1 / 10)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                        var acc = document.getElementsByClassName("desc");
+                    var i;
+                     for (i = 0; i < acc.length; i++) {
+                        acc[i].addEventListener("click", function() {
+                            /* Toggle between adding and removing the "active" class,
+                            to highlight the button that controls the panel */
+                            this.classList.toggle("active");
+                    
+                            /* Toggle between hiding and showing the active panel */
+                            var panel = this.nextElementSibling;
+                            if (panel.style.display === "block") {
+                                panel.style.display = "none";
+                            } else {
+                                panel.style.display = "block";
+                            }
+                        });
+                    } 
+                    </script>
+
+                    <div class="NG">
+                            <div class="NG1">
+                                    <a href="Images/runner.jpg" target="_self">
+                                        <img src="Images/runner.jpg" alt="runner">
+                                </a>
+
+                                        <div class="NGcontent">
+                                                <h1>Runner</h1>
+                                                <p>En Bra Film Från arton hundra talet.</p>
+                                                <button class="btn"><i class="btn-download"></i>Download</button>
+
+                                        </div>
+
+                            </div>
+                           <div class="NG1">
+                                   <a href="Images/serena.jpg" target="_self">
+                                        <img src="Images/serena.jpg" alt="runner">
+                                </a>
+                                        <div class="NGcontent">
+                                                <h1>Serena</h1>
+                                                <p>En Bra Film Från nitton hundra talet.</p>
+                                                <button class="btn"><i class="btn-download"></i>Download</button>
+
+                                        </div>
+                           </div>
+                           <div class="NG1">
+                                   <a href="Images/widow.jpg" target="_self">
+                                        <img src="Images/widow.jpg" alt="runner">
+                                </a>
+                                        <div class="NGcontent">
+                                                <h1>Widow</h1>
+                                                <p>En Bra Film Från nitton hundra talet.</p>
+                                                <button class="btn"><i class="btn-download"></i>Download</button>
+
+                                        </div>
+                           </div>
+
+                           <div class="NG1">
+                                   <a href="Images/rebellion.jpg" target="_self">
+                                
+                                </a>
+                                        <img src="Images/rebellion.jpg" alt="runner">
+                                        <div class="NGcontent">
+                                            <span class="NGT">ToolTip</span>
+                                                <h1>Rebellion</h1>
+                                                <p>En Bra Film Från nitton hundra talet.</p>
+                                                <button class="btn"><i class="btn-download"></i>Download</button>
+
+                                        </div>
+                           </div>
+                            
+                    </div>
+                
+
+
+
+
+       
+    
+</body>
+</html>
